@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+
+git config --global core.autocrlf true
+
 # Check if running in Git Bash
 if [ -z "$BASH_VERSION" ]; then
     echo "This script should be run in Git Bash."
